@@ -1,0 +1,255 @@
+/* Color Tokens Light Theme */
+:root,
+:root[data-theme='light'] {
+  --codez-elements-borderColor: theme('colors.alpha.gray.10');
+  --codez-elements-borderColorActive: theme('colors.accent.600');
+
+  --codez-elements-bg-depth-1: theme('colors.white');
+  --codez-elements-bg-depth-2: theme('colors.gray.50');
+  --codez-elements-bg-depth-3: theme('colors.gray.200');
+  --codez-elements-bg-depth-4: theme('colors.alpha.gray.5');
+
+  --codez-elements-textPrimary: theme('colors.gray.950');
+  --codez-elements-textSecondary: theme('colors.gray.600');
+  --codez-elements-textTertiary: theme('colors.gray.500');
+
+  --codez-elements-code-background: theme('colors.gray.100');
+  --codez-elements-code-text: theme('colors.gray.950');
+
+  --codez-elements-button-primary-background: theme('colors.alpha.accent.10');
+  --codez-elements-button-primary-backgroundHover: theme('colors.alpha.accent.20');
+  --codez-elements-button-primary-text: theme('colors.accent.500');
+
+  --codez-elements-button-secondary-background: theme('colors.alpha.gray.5');
+  --codez-elements-button-secondary-backgroundHover: theme('colors.alpha.gray.10');
+  --codez-elements-button-secondary-text: theme('colors.gray.950');
+
+  --codez-elements-button-danger-background: theme('colors.alpha.red.10');
+  --codez-elements-button-danger-backgroundHover: theme('colors.alpha.red.20');
+  --codez-elements-button-danger-text: theme('colors.red.500');
+
+  --codez-elements-item-contentDefault: theme('colors.alpha.gray.50');
+  --codez-elements-item-contentActive: theme('colors.gray.950');
+  --codez-elements-item-contentAccent: theme('colors.accent.700');
+  --codez-elements-item-contentDanger: theme('colors.red.500');
+  --codez-elements-item-backgroundDefault: rgba(0, 0, 0, 0);
+  --codez-elements-item-backgroundActive: theme('colors.alpha.gray.5');
+  --codez-elements-item-backgroundAccent: theme('colors.alpha.accent.10');
+  --codez-elements-item-backgroundDanger: theme('colors.alpha.red.10');
+
+  --codez-elements-loader-background: theme('colors.alpha.gray.10');
+  --codez-elements-loader-progress: theme('colors.accent.500');
+
+  --codez-elements-artifacts-background: theme('colors.white');
+  --codez-elements-artifacts-backgroundHover: theme('colors.alpha.gray.2');
+  --codez-elements-artifacts-borderColor: var(--codez-elements-borderColor);
+  --codez-elements-artifacts-inlineCode-background: theme('colors.gray.100');
+  --codez-elements-artifacts-inlineCode-text: var(--codez-elements-textPrimary);
+
+  --codez-elements-actions-background: theme('colors.white');
+  --codez-elements-actions-code-background: theme('colors.gray.800');
+
+  --codez-elements-messages-background: theme('colors.gray.100');
+  --codez-elements-messages-linkColor: theme('colors.accent.500');
+  --codez-elements-messages-code-background: theme('colors.gray.800');
+  --codez-elements-messages-inlineCode-background: theme('colors.gray.200');
+  --codez-elements-messages-inlineCode-text: theme('colors.gray.800');
+
+  --codez-elements-icon-success: theme('colors.green.500');
+  --codez-elements-icon-error: theme('colors.red.500');
+  --codez-elements-icon-primary: theme('colors.gray.950');
+  --codez-elements-icon-secondary: theme('colors.gray.600');
+  --codez-elements-icon-tertiary: theme('colors.gray.500');
+
+  --codez-elements-dividerColor: theme('colors.gray.100');
+
+  --codez-elements-prompt-background: theme('colors.alpha.white.80');
+
+  --codez-elements-sidebar-dropdownShadow: theme('colors.alpha.gray.10');
+  --codez-elements-sidebar-buttonBackgroundDefault: theme('colors.alpha.accent.10');
+  --codez-elements-sidebar-buttonBackgroundHover: theme('colors.alpha.accent.20');
+  --codez-elements-sidebar-buttonText: theme('colors.accent.700');
+
+  --codez-elements-preview-addressBar-background: theme('colors.gray.100');
+  --codez-elements-preview-addressBar-backgroundHover: theme('colors.alpha.gray.5');
+  --codez-elements-preview-addressBar-backgroundActive: theme('colors.white');
+  --codez-elements-preview-addressBar-text: var(--codez-elements-textSecondary);
+  --codez-elements-preview-addressBar-textActive: var(--codez-elements-textPrimary);
+
+  --codez-elements-terminals-background: theme('colors.white');
+  --codez-elements-terminals-buttonBackground: var(--codez-elements-bg-depth-4);
+
+  --codez-elements-cta-background: theme('colors.gray.100');
+  --codez-elements-cta-text: theme('colors.gray.950');
+
+  /* Terminal Colors */
+  --codez-terminal-background: var(--codez-elements-terminals-background);
+  --codez-terminal-foreground: #333333;
+  --codez-terminal-selection-background: #00000040;
+  --codez-terminal-black: #000000;
+  --codez-terminal-red: #cd3131;
+  --codez-terminal-green: #00bc00;
+  --codez-terminal-yellow: #949800;
+  --codez-terminal-blue: #0451a5;
+  --codez-terminal-magenta: #bc05bc;
+  --codez-terminal-cyan: #0598bc;
+  --codez-terminal-white: #555555;
+  --codez-terminal-brightBlack: #686868;
+  --codez-terminal-brightRed: #cd3131;
+  --codez-terminal-brightGreen: #00bc00;
+  --codez-terminal-brightYellow: #949800;
+  --codez-terminal-brightBlue: #0451a5;
+  --codez-terminal-brightMagenta: #bc05bc;
+  --codez-terminal-brightCyan: #0598bc;
+  --codez-terminal-brightWhite: #a5a5a5;
+  --modern-scrollbar-thumb-background: rgba(100, 100, 100, 0.3); // Example light theme color
+  --modern-scrollbar-thumb-backgroundHover: rgba(74, 74, 74, 0.8);
+}
+
+/* Color Tokens Dark Theme */
+:root,
+:root[data-theme='dark'] {
+  --codez-elements-borderColor: theme('colors.alpha.white.10');
+  --codez-elements-borderColorActive: theme('colors.accent.500');
+
+  --codez-elements-bg-depth-1: theme('colors.gray.950');
+  --codez-elements-bg-depth-2: theme('colors.gray.900');
+  --codez-elements-bg-depth-3: theme('colors.gray.800');
+  --codez-elements-bg-depth-4: theme('colors.alpha.white.5');
+
+  --codez-elements-textPrimary: theme('colors.white');
+  --codez-elements-textSecondary: theme('colors.gray.400');
+  --codez-elements-textTertiary: theme('colors.gray.500');
+
+  --codez-elements-code-background: theme('colors.gray.800');
+  --codez-elements-code-text: theme('colors.white');
+
+  --codez-elements-button-primary-background: theme('colors.alpha.accent.10');
+  --codez-elements-button-primary-backgroundHover: theme('colors.alpha.accent.20');
+  --codez-elements-button-primary-text: theme('colors.accent.500');
+
+  --codez-elements-button-secondary-background: theme('colors.alpha.white.5');
+  --codez-elements-button-secondary-backgroundHover: theme('colors.alpha.white.10');
+  --codez-elements-button-secondary-text: theme('colors.white');
+
+  --codez-elements-button-danger-background: theme('colors.alpha.red.10');
+  --codez-elements-button-danger-backgroundHover: theme('colors.alpha.red.20');
+  --codez-elements-button-danger-text: theme('colors.red.500');
+
+  --codez-elements-item-contentDefault: theme('colors.alpha.white.50');
+  --codez-elements-item-contentActive: theme('colors.white');
+  --codez-elements-item-contentAccent: theme('colors.accent.500');
+  --codez-elements-item-contentDanger: theme('colors.red.500');
+  --codez-elements-item-backgroundDefault: rgba(255, 255, 255, 0);
+  --codez-elements-item-backgroundActive: theme('colors.alpha.white.10');
+  --codez-elements-item-backgroundAccent: theme('colors.alpha.accent.10');
+  --codez-elements-item-backgroundDanger: theme('colors.alpha.red.10');
+
+  --codez-elements-loader-background: theme('colors.alpha.gray.10');
+  --codez-elements-loader-progress: theme('colors.accent.500');
+
+  --codez-elements-artifacts-background: theme('colors.gray.900');
+  --codez-elements-artifacts-backgroundHover: theme('colors.alpha.white.5');
+  --codez-elements-artifacts-borderColor: var(--codez-elements-borderColor);
+  --codez-elements-artifacts-inlineCode-background: theme('colors.gray.800');
+  --codez-elements-artifacts-inlineCode-text: theme('colors.white');
+
+  --codez-elements-actions-background: theme('colors.gray.900');
+  --codez-elements-actions-code-background: theme('colors.gray.800');
+
+  --codez-elements-messages-background: theme('colors.gray.800');
+  --codez-elements-messages-linkColor: theme('colors.accent.500');
+  --codez-elements-messages-code-background: theme('colors.gray.900');
+  --codez-elements-messages-inlineCode-background: theme('colors.gray.700');
+  --codez-elements-messages-inlineCode-text: var(--codez-elements-textPrimary);
+
+  --codez-elements-icon-success: theme('colors.green.400');
+  --codez-elements-icon-error: theme('colors.red.400');
+  --codez-elements-icon-primary: theme('colors.gray.950');
+  --codez-elements-icon-secondary: theme('colors.gray.600');
+  --codez-elements-icon-tertiary: theme('colors.gray.500');
+
+  --codez-elements-dividerColor: theme('colors.gray.100');
+
+  --codez-elements-prompt-background: theme('colors.alpha.gray.80');
+
+  --codez-elements-sidebar-dropdownShadow: theme('colors.alpha.gray.30');
+  --codez-elements-sidebar-buttonBackgroundDefault: theme('colors.alpha.accent.10');
+  --codez-elements-sidebar-buttonBackgroundHover: theme('colors.alpha.accent.20');
+  --codez-elements-sidebar-buttonText: theme('colors.accent.500');
+
+  --codez-elements-preview-addressBar-background: var(--codez-elements-bg-depth-1);
+  --codez-elements-preview-addressBar-backgroundHover: theme('colors.alpha.white.5');
+  --codez-elements-preview-addressBar-backgroundActive: var(--codez-elements-bg-depth-1);
+  --codez-elements-preview-addressBar-text: var(--codez-elements-textSecondary);
+  --codez-elements-preview-addressBar-textActive: var(--codez-elements-textPrimary);
+
+  --codez-elements-terminals-background: var(--codez-elements-bg-depth-1);
+  --codez-elements-terminals-buttonBackground: var(--codez-elements-bg-depth-3);
+
+  --codez-elements-cta-background: theme('colors.alpha.white.10');
+  --codez-elements-cta-text: theme('colors.white');
+
+  /* Terminal Colors */
+  --codez-terminal-background: var(--codez-elements-terminals-background);
+  --codez-terminal-foreground: #eff0eb;
+  --codez-terminal-selection-background: #97979b33;
+  --codez-terminal-black: #000000;
+  --codez-terminal-red: #ff5c57;
+  --codez-terminal-green: #5af78e;
+  --codez-terminal-yellow: #f3f99d;
+  --codez-terminal-blue: #57c7ff;
+  --codez-terminal-magenta: #ff6ac1;
+  --codez-terminal-cyan: #9aedfe;
+  --codez-terminal-white: #f1f1f0;
+  --codez-terminal-brightBlack: #686868;
+  --codez-terminal-brightRed: #ff5c57;
+  --codez-terminal-brightGreen: #5af78e;
+  --codez-terminal-brightYellow: #f3f99d;
+  --codez-terminal-brightBlue: #57c7ff;
+  --codez-terminal-brightMagenta: #ff6ac1;
+  --codez-terminal-brightCyan: #9aedfe;
+  --codez-terminal-brightWhite: #f1f1f0;
+  --modern-scrollbar-thumb-background: rgba(100, 100, 100, 0.3); // Example dark theme color (adjust as needed)
+  --modern-scrollbar-thumb-backgroundHover: rgba(10, 10, 10, 0.8);
+}
+
+/*
+ * Element Tokens
+ *
+ * Hierarchy: Element Token -> (Element Token | Color Tokens) -> Primitives
+ */
+:root {
+  --header-height: 54px;
+  --chat-max-width: 33rem;
+  --chat-min-width: 533px;
+  --workbench-width: min(calc(100% - var(--chat-min-width)), 2536px);
+  --workbench-inner-width: var(--workbench-width);
+  --workbench-left: calc(100% - var(--workbench-width));
+
+  /* Toasts */
+  --toastify-color-progress-success: var(--codez-elements-icon-success);
+  --toastify-color-progress-error: var(--codez-elements-icon-error);
+
+  /* Terminal */
+  --codez-elements-terminal-backgroundColor: var(--codez-terminal-background);
+  --codez-elements-terminal-textColor: var(--codez-terminal-foreground);
+  --codez-elements-terminal-cursorColor: var(--codez-terminal-foreground);
+  --codez-elements-terminal-selection-backgroundColor: var(--codez-terminal-selection-background);
+  --codez-elements-terminal-color-black: var(--codez-terminal-black);
+  --codez-elements-terminal-color-red: var(--codez-terminal-red);
+  --codez-elements-terminal-color-green: var(--codez-terminal-green);
+  --codez-elements-terminal-color-yellow: var(--codez-terminal-yellow);
+  --codez-elements-terminal-color-blue: var(--codez-terminal-blue);
+  --codez-elements-terminal-color-magenta: var(--codez-terminal-magenta);
+  --codez-elements-terminal-color-cyan: var(--codez-terminal-cyan);
+  --codez-elements-terminal-color-white: var(--codez-terminal-white);
+  --codez-elements-terminal-color-brightBlack: var(--codez-terminal-brightBlack);
+  --codez-elements-terminal-color-brightRed: var(--codez-terminal-brightRed);
+  --codez-elements-terminal-color-brightGreen: var(--codez-terminal-brightGreen);
+  --codez-elements-terminal-color-brightYellow: var(--codez-terminal-brightYellow);
+  --codez-elements-terminal-color-brightBlue: var(--codez-terminal-brightBlue);
+  --codez-elements-terminal-color-brightMagenta: var(--codez-terminal-brightMagenta);
+  --codez-elements-terminal-color-brightCyan: var(--codez-terminal-brightCyan);
+  --codez-elements-terminal-color-brightWhite: var(--codez-terminal-brightWhite);
+}

@@ -1,0 +1,135 @@
+:root {
+  --cm-backgroundColor: var(--codez-elements-editor-backgroundColor, var(--codez-elements-bg-depth-1));
+  --cm-textColor: var(--codez-elements-editor-textColor, var(--codez-elements-textPrimary));
+
+  /* Gutter */
+
+  --cm-gutter-backgroundColor: var(--codez-elements-editor-gutter-backgroundColor, var(--cm-backgroundColor));
+  --cm-gutter-textColor: var(--codez-elements-editor-gutter-textColor, var(--codez-elements-textSecondary));
+  --cm-gutter-activeLineTextColor: var(--codez-elements-editor-gutter-activeLineTextColor, var(--cm-gutter-textColor));
+
+  /* Fold Gutter */
+
+  --cm-foldGutter-textColor: var(--codez-elements-editor-foldGutter-textColor, var(--cm-gutter-textColor));
+  --cm-foldGutter-textColorHover: var(--codez-elements-editor-foldGutter-textColorHover, var(--cm-gutter-textColor));
+
+  /* Active Line */
+
+  --cm-activeLineBackgroundColor: var(--codez-elements-editor-activeLineBackgroundColor, rgb(224 231 235 / 30%));
+
+  /* Cursor */
+
+  --cm-cursor-width: 2px;
+  --cm-cursor-backgroundColor: var(--codez-elements-editor-cursorColor, var(--codez-elements-textSecondary));
+
+  /* Matching Brackets */
+
+  --cm-matching-bracket: var(--codez-elements-editor-matchingBracketBackgroundColor, rgb(50 140 130 / 0.3));
+
+  /* Selection */
+
+  --cm-selection-backgroundColorFocused: var(--codez-elements-editor-selection-backgroundColor, #42b4ff);
+  --cm-selection-backgroundOpacityFocused: var(--codez-elements-editor-selection-backgroundOpacity, 0.3);
+  --cm-selection-backgroundColorBlured: var(--codez-elements-editor-selection-inactiveBackgroundColor, #c9e9ff);
+  --cm-selection-backgroundOpacityBlured: var(--codez-elements-editor-selection-inactiveBackgroundOpacity, 0.3);
+
+  /* Panels */
+
+  --cm-panels-borderColor: var(--codez-elements-editor-panels-borderColor, var(--codez-elements-borderColor));
+
+  /* Search */
+
+  --cm-search-backgroundColor: var(--codez-elements-editor-search-backgroundColor, var(--cm-backgroundColor));
+  --cm-search-textColor: var(--codez-elements-editor-search-textColor, var(--codez-elements-textSecondary));
+  --cm-search-closeButton-backgroundColor: var(--codez-elements-editor-search-closeButton-backgroundColor, transparent);
+
+  --cm-search-closeButton-backgroundColorHover: var(
+    --codez-elements-editor-search-closeButton-backgroundColorHover,
+    var(--codez-elements-item-backgroundActive)
+  );
+
+  --cm-search-closeButton-textColor: var(
+    --codez-elements-editor-search-closeButton-textColor,
+    var(--codez-elements-item-contentDefault)
+  );
+
+  --cm-search-closeButton-textColorHover: var(
+    --codez-elements-editor-search-closeButton-textColorHover,
+    var(--codez-elements-item-contentActive)
+  );
+
+  --cm-search-button-backgroundColor: var(
+    --codez-elements-editor-search-button-backgroundColor,
+    var(--codez-elements-item-backgroundDefault)
+  );
+
+  --cm-search-button-backgroundColorHover: var(
+    --codez-elements-editor-search-button-backgroundColorHover,
+    var(--codez-elements-item-backgroundActive)
+  );
+
+  --cm-search-button-textColor: var(--codez-elements-editor-search-button-textColor, var(--codez-elements-textSecondary));
+
+  --cm-search-button-textColorHover: var(
+    --codez-elements-editor-search-button-textColorHover,
+    var(--codez-elements-textPrimary)
+  );
+
+  --cm-search-button-borderColor: var(--codez-elements-editor-search-button-borderColor, transparent);
+  --cm-search-button-borderColorHover: var(--codez-elements-editor-search-button-borderColorHover, transparent);
+
+  --cm-search-button-borderColorFocused: var(
+    --codez-elements-editor-search-button-borderColorFocused,
+    var(--codez-elements-borderColorActive)
+  );
+
+  --cm-search-input-backgroundColor: var(--codez-elements-editor-search-input-backgroundColor, transparent);
+  --cm-search-input-textColor: var(--codez-elements-editor-search-input-textColor, var(--codez-elements-textPrimary));
+  --cm-search-input-borderColor: var(--codez-elements-editor-search-input-borderColor, var(--codez-elements-borderColor));
+
+  --cm-search-input-borderColorFocused: var(
+    --codez-elements-editor-search-input-borderColorFocused,
+    var(--codez-elements-borderColorActive)
+  );
+
+  /* Tooltip */
+
+  --cm-tooltip-backgroundColor: var(--codez-elements-editor-tooltip-backgroundColor, var(--cm-backgroundColor));
+  --cm-tooltip-textColor: var(--codez-elements-editor-tooltip-textColor, var(--codez-elements-textPrimary));
+
+  --cm-tooltip-backgroundColorSelected: var(
+    --codez-elements-editor-tooltip-backgroundColorSelected,
+    theme('colors.alpha.accent.30')
+  );
+
+  --cm-tooltip-textColorSelected: var(
+    --codez-elements-editor-tooltip-textColorSelected,
+    var(--codez-elements-textPrimary)
+  );
+
+  --cm-tooltip-borderColor: var(--codez-elements-editor-tooltip-borderColor, var(--codez-elements-borderColor));
+
+  --cm-searchMatch-backgroundColor: var(--codez-elements-editor-searchMatch-backgroundColor, rgba(234, 92, 0, 0.33));
+}
+
+html[data-theme='light'] {
+  --codez-elements-editor-gutter-textColor: #237893;
+  --codez-elements-editor-gutter-activeLineTextColor: var(--codez-elements-textPrimary);
+  --codez-elements-editor-foldGutter-textColorHover: var(--codez-elements-textPrimary);
+  --codez-elements-editor-activeLineBackgroundColor: rgb(50 53 63 / 5%);
+  --codez-elements-editor-tooltip-backgroundColorSelected: theme('colors.alpha.accent.20');
+  --codez-elements-editor-search-button-backgroundColor: theme('colors.gray.100');
+  --codez-elements-editor-search-button-backgroundColorHover: theme('colors.alpha.gray.10');
+}
+
+html[data-theme='dark'] {
+  --cm-backgroundColor: var(--codez-elements-bg-depth-2);
+  --codez-elements-editor-gutter-textColor: var(--codez-elements-textTertiary);
+  --codez-elements-editor-gutter-activeLineTextColor: var(--codez-elements-textSecondary);
+  --codez-elements-editor-selection-inactiveBackgroundOpacity: 0.3;
+  --codez-elements-editor-activeLineBackgroundColor: rgb(50 53 63 / 50%);
+  --codez-elements-editor-foldGutter-textColorHover: var(--codez-elements-textPrimary);
+  --codez-elements-editor-matchingBracketBackgroundColor: rgba(66, 180, 255, 0.3);
+  --codez-elements-editor-search-button-backgroundColor: theme('colors.gray.800');
+  --codez-elements-editor-search-button-backgroundColorHover: theme('colors.alpha.white.10');
+}
